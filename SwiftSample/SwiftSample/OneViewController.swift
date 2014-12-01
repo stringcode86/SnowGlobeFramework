@@ -1,0 +1,17 @@
+//
+//  OneViewController.swift
+//  SwiftSample
+//
+//  Created by stringCode on 11/25/14.
+//  Copyright (c) 2014 stringCode. All rights reserved.
+//
+
+import UIKit
+import SnowGlobe
+
+class OneViewController: UIViewController {
+
+    override func viewDidLoad() {
+        tabBarController?.navigationItem.title = self.navigationItem.title
+    }
+}

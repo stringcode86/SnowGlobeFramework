@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SnowGlobe/SnowGlobe.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SwiftSample/SwiftSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ObjCSample/ObjCSample.xcodeproj">
+   </FileRef>
+</Workspace>

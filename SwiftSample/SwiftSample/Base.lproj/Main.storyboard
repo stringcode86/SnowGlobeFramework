@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r9Q-Ij-JaB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+    </dependencies>
+    <scenes>
+        <!--Shake to snow-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OneViewController" customModule="SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsL-h3-V9B">
+                                <rect key="frame" x="16" y="273" width="569" height="82"/>
+                                <string key="text">SnowGlobeView was added to keyWindow in shake to snow mode. Will snow anywhere in the app whenever device is shaken. This is the usecase framework was designed for. You can also add SnowGlobeView as subview in witch case it will animate continuesly.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WsL-h3-V9B" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="75R-oi-typ"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WsL-h3-V9B" secondAttribute="trailing" constant="15" id="I6F-rf-03O"/>
+                            <constraint firstAttribute="centerY" secondItem="WsL-h3-V9B" secondAttribute="centerY" constant="-14" id="hnI-g0-mod"/>
+                            <constraint firstAttribute="centerX" secondItem="WsL-h3-V9B" secondAttribute="centerX" constant="-0.5" id="rYA-sZ-puL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shake to snow" id="swC-kj-09h"/>
+                    <navigationItem key="navigationItem" title="Shake to snow" id="Wy4-dQ-lKr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="485" y="476"/>
+        </scene>
+        <!--Subview with dark snowflake-->
+        <scene sceneID="V29-QF-aip">
+            <objects>
+                <viewController title="Subview with dark snowflake" id="VnE-06-3tI" customClass="TwoViewController" customModule="SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oV2-TL-XdX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ygo-X8-8r3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6xC-k3-VIW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEB-vn-JGG">
+                                <rect key="frame" x="33" y="269" width="536" height="62"/>
+                                <string key="text">SnowGlobeView was added as subview of ViewController's view with darkSnowFlakeImage. Framework cames with ligth (default) and dark snowFlake images, you can also set your custom image</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="DEB-vn-JGG" secondAttribute="centerY" constant="0.5" id="D2f-3k-tbS"/>
+                            <constraint firstAttribute="centerX" secondItem="DEB-vn-JGG" secondAttribute="centerX" constant="-0.5" id="SlD-bg-wLt"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DEB-vn-JGG" secondAttribute="trailing" constant="15" id="bOq-19-OtW"/>
+                            <constraint firstItem="DEB-vn-JGG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6xC-k3-VIW" secondAttribute="leading" constant="15" id="rZ4-Oy-AcP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Subview" id="58s-qw-amU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDM-8j-0nP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="485" y="1142"/>
+        </scene>
+        <!--Lighter snow mode-->
+        <scene sceneID="hhb-c2-4Y9">
+            <objects>
+                <viewController title="Lighter snow mode" id="L7Q-mw-E7S" customClass="ThreeViewController" customModule="SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7kS-EA-ia6"/>
+                        <viewControllerLayoutGuide type="bottom" id="1zT-K5-ceA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FZH-9d-IoZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SnowGlobeView was added as subview of ViewController's with lighterSnowMode." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvC-x0-THj">
+                                <rect key="frame" x="52" y="279" width="496" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yvC-x0-THj" secondAttribute="trailing" constant="15" id="0bX-MW-IF5"/>
+                            <constraint firstAttribute="centerX" secondItem="yvC-x0-THj" secondAttribute="centerX" id="CWv-AM-Tmx"/>
+                            <constraint firstAttribute="centerY" secondItem="yvC-x0-THj" secondAttribute="centerY" constant="0.5" id="GUj-Qa-SZT"/>
+                            <constraint firstItem="yvC-x0-THj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FZH-9d-IoZ" secondAttribute="leading" constant="15" id="gT7-XI-Hkk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Subview with lighterSnowMode" id="EBC-NY-OEb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ais-Ml-uLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="485" y="1814"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="m7Z-NT-IBP">
+            <objects>
+                <tabBarController id="ZpD-uC-rcd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7h6-BU-468"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="HQa-BC-0pa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="kjB-RK-FCA"/>
+                        <segue destination="VnE-06-3tI" kind="relationship" relationship="viewControllers" id="AJT-Yj-on8"/>
+                        <segue destination="L7Q-mw-E7S" kind="relationship" relationship="viewControllers" id="J1e-Rn-l3W"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3by-LQ-apN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252" y="1076"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KcJ-NS-Qww">
+            <objects>
+                <navigationController id="r9Q-Ij-JaB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="USs-RR-QHV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZpD-uC-rcd" kind="relationship" relationship="rootViewController" id="dyH-WN-Ptj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hq9-uU-PWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-924" y="1076"/>
+        </scene>
+    </scenes>
+</document>
