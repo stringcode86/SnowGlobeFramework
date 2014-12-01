@@ -1,0 +1,14 @@
+.DS_Store
+
+*.pbxuser
+*.perspective
+*.perspectivev3
+
+*.mode1v3
+*.mode2v3
+
+**/xcuserdata/**
+*.xcuserstate
+*.xccheckout
+
+docset-installed.txt
