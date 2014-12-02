@@ -3,7 +3,6 @@
 //  SnowGlobe
 //
 //  Created by stringCode on 11/23/14.
-//  Copyright (c) 2014 stringCode. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

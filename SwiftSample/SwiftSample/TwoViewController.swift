@@ -3,7 +3,6 @@
 //  SwiftSample
 //
 //  Created by stringCode on 11/25/14.
-//  Copyright (c) 2014 stringCode. All rights reserved.
 //
 
 import UIKit
