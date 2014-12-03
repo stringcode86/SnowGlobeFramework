@@ -16,7 +16,8 @@
 		9FDC71531A2FC18E0033F371 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC714E1A2FC18E0033F371 /* OneViewController.m */; };
 		9FDC71541A2FC18E0033F371 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC71501A2FC18E0033F371 /* ThreeViewController.m */; };
 		9FDC71551A2FC18E0033F371 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC71521A2FC18E0033F371 /* TwoViewController.m */; };
-		9FF7AF311A2FC41D00C043BA /* SnowGlobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7AF301A2FC41D00C043BA /* SnowGlobe.framework */; };
+		9FF7B0111A2FD54E00C043BA /* SnowGlobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7B00E1A2FD52800C043BA /* SnowGlobe.framework */; };
+		9FF7B0121A2FD54E00C043BA /* SnowGlobe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7B00E1A2FD52800C043BA /* SnowGlobe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +28,42 @@
 			remoteGlobalIDString = 9FDC711B1A2FC0C60033F371;
 			remoteInfo = ObjCSample;
 		};
+		9FF7B00D1A2FD52800C043BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FF7AFF21A2FD43800C043BA /* SnowGlobe.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FDC70BC1A2FBFAB0033F371;
+			remoteInfo = SnowGlobe;
+		};
+		9FF7B00F1A2FD52800C043BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FF7AFF21A2FD43800C043BA /* SnowGlobe.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FDC70C71A2FBFAB0033F371;
+			remoteInfo = SnowGlobeTests;
+		};
+		9FF7B0131A2FD54E00C043BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FF7AFF21A2FD43800C043BA /* SnowGlobe.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FDC70BB1A2FBFAB0033F371;
+			remoteInfo = SnowGlobe;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9FF7B0151A2FD54E00C043BA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9FF7B0121A2FD54E00C043BA /* SnowGlobe.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9FDC711C1A2FC0C60033F371 /* ObjCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +83,7 @@
 		9FDC71501A2FC18E0033F371 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		9FDC71511A2FC18E0033F371 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		9FDC71521A2FC18E0033F371 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
-		9FF7AF301A2FC41D00C043BA /* SnowGlobe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnowGlobe.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Sample-btgvnqjjwzhhgtclajmwhftlyfji/Build/Products/Debug-iphoneos/SnowGlobe.framework"; sourceTree = "<group>"; };
+		9FF7AFF21A2FD43800C043BA /* SnowGlobe.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnowGlobe.xcodeproj; path = ../../SnowGlobe/SnowGlobe.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF7AF311A2FC41D00C043BA /* SnowGlobe.framework in Frameworks */,
+				9FF7B0111A2FD54E00C043BA /* SnowGlobe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,9 +108,9 @@
 		9FDC71131A2FC0C60033F371 = {
 			isa = PBXGroup;
 			children = (
-				9FF7AF301A2FC41D00C043BA /* SnowGlobe.framework */,
 				9FDC711E1A2FC0C60033F371 /* ObjCSample */,
 				9FDC71381A2FC0C60033F371 /* ObjCSampleTests */,
+				9FF7B0041A2FD4E400C043BA /* Frameworks */,
 				9FDC711D1A2FC0C60033F371 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -133,6 +169,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9FF7B0041A2FD4E400C043BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FF7AFF21A2FD43800C043BA /* SnowGlobe.xcodeproj */,
+			);
+			name = Frameworks;
+			path = ObjCSample;
+			sourceTree = "<group>";
+		};
+		9FF7B0091A2FD52800C043BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FF7B00E1A2FD52800C043BA /* SnowGlobe.framework */,
+				9FF7B0101A2FD52800C043BA /* SnowGlobeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,10 +197,12 @@
 				9FDC71181A2FC0C60033F371 /* Sources */,
 				9FDC71191A2FC0C60033F371 /* Frameworks */,
 				9FDC711A1A2FC0C60033F371 /* Resources */,
+				9FF7B0151A2FD54E00C043BA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9FF7B0141A2FD54E00C043BA /* PBXTargetDependency */,
 			);
 			name = ObjCSample;
 			productName = ObjCSample;
@@ -201,6 +257,12 @@
 			mainGroup = 9FDC71131A2FC0C60033F371;
 			productRefGroup = 9FDC711D1A2FC0C60033F371 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9FF7B0091A2FD52800C043BA /* Products */;
+					ProjectRef = 9FF7AFF21A2FD43800C043BA /* SnowGlobe.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9FDC711B1A2FC0C60033F371 /* ObjCSample */,
@@ -208,6 +270,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9FF7B00E1A2FD52800C043BA /* SnowGlobe.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnowGlobe.framework;
+			remoteRef = 9FF7B00D1A2FD52800C043BA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9FF7B0101A2FD52800C043BA /* SnowGlobeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SnowGlobeTests.xctest;
+			remoteRef = 9FF7B00F1A2FD52800C043BA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9FDC711A1A2FC0C60033F371 /* Resources */ = {
@@ -257,6 +336,11 @@
 			isa = PBXTargetDependency;
 			target = 9FDC711B1A2FC0C60033F371 /* ObjCSample */;
 			targetProxy = 9FDC71361A2FC0C60033F371 /* PBXContainerItemProxy */;
+		};
+		9FF7B0141A2FD54E00C043BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnowGlobe;
+			targetProxy = 9FF7B0131A2FD54E00C043BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -363,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Sample-btgvnqjjwzhhgtclajmwhftlyfji/Build/Products/Debug-iphoneos",
@@ -378,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Sample-btgvnqjjwzhhgtclajmwhftlyfji/Build/Products/Debug-iphoneos",
