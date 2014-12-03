@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		9FDC71221A2FC0C60033F371 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC71211A2FC0C60033F371 /* main.m */; };
 		9FDC71251A2FC0C60033F371 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC71241A2FC0C60033F371 /* AppDelegate.m */; };
-		9FDC71281A2FC0C60033F371 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC71271A2FC0C60033F371 /* ViewController.m */; };
 		9FDC712B1A2FC0C60033F371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC71291A2FC0C60033F371 /* Main.storyboard */; };
 		9FDC712D1A2FC0C60033F371 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC712C1A2FC0C60033F371 /* Images.xcassets */; };
 		9FDC71301A2FC0C60033F371 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC712E1A2FC0C60033F371 /* LaunchScreen.xib */; };
 		9FDC713C1A2FC0C60033F371 /* ObjCSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC713B1A2FC0C60033F371 /* ObjCSampleTests.m */; };
+		9FDC71531A2FC18E0033F371 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC714E1A2FC18E0033F371 /* OneViewController.m */; };
+		9FDC71541A2FC18E0033F371 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC71501A2FC18E0033F371 /* ThreeViewController.m */; };
+		9FDC71551A2FC18E0033F371 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC71521A2FC18E0033F371 /* TwoViewController.m */; };
+		9FF7AF311A2FC41D00C043BA /* SnowGlobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7AF301A2FC41D00C043BA /* SnowGlobe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,19 @@
 		9FDC71211A2FC0C60033F371 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9FDC71231A2FC0C60033F371 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9FDC71241A2FC0C60033F371 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9FDC71261A2FC0C60033F371 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9FDC71271A2FC0C60033F371 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9FDC712A1A2FC0C60033F371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FDC712C1A2FC0C60033F371 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9FDC712F1A2FC0C60033F371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9FDC71351A2FC0C60033F371 /* ObjCSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjCSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FDC713A1A2FC0C60033F371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FDC713B1A2FC0C60033F371 /* ObjCSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCSampleTests.m; sourceTree = "<group>"; };
+		9FDC714D1A2FC18E0033F371 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		9FDC714E1A2FC18E0033F371 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		9FDC714F1A2FC18E0033F371 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		9FDC71501A2FC18E0033F371 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		9FDC71511A2FC18E0033F371 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		9FDC71521A2FC18E0033F371 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		9FF7AF301A2FC41D00C043BA /* SnowGlobe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnowGlobe.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Sample-btgvnqjjwzhhgtclajmwhftlyfji/Build/Products/Debug-iphoneos/SnowGlobe.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF7AF311A2FC41D00C043BA /* SnowGlobe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 		9FDC71131A2FC0C60033F371 = {
 			isa = PBXGroup;
 			children = (
+				9FF7AF301A2FC41D00C043BA /* SnowGlobe.framework */,
 				9FDC711E1A2FC0C60033F371 /* ObjCSample */,
 				9FDC71381A2FC0C60033F371 /* ObjCSampleTests */,
 				9FDC711D1A2FC0C60033F371 /* Products */,
@@ -83,8 +93,12 @@
 			children = (
 				9FDC71231A2FC0C60033F371 /* AppDelegate.h */,
 				9FDC71241A2FC0C60033F371 /* AppDelegate.m */,
-				9FDC71261A2FC0C60033F371 /* ViewController.h */,
-				9FDC71271A2FC0C60033F371 /* ViewController.m */,
+				9FDC714D1A2FC18E0033F371 /* OneViewController.h */,
+				9FDC714E1A2FC18E0033F371 /* OneViewController.m */,
+				9FDC714F1A2FC18E0033F371 /* ThreeViewController.h */,
+				9FDC71501A2FC18E0033F371 /* ThreeViewController.m */,
+				9FDC71511A2FC18E0033F371 /* TwoViewController.h */,
+				9FDC71521A2FC18E0033F371 /* TwoViewController.m */,
 				9FDC71291A2FC0C60033F371 /* Main.storyboard */,
 				9FDC712C1A2FC0C60033F371 /* Images.xcassets */,
 				9FDC712E1A2FC0C60033F371 /* LaunchScreen.xib */,
@@ -168,6 +182,7 @@
 				TargetAttributes = {
 					9FDC711B1A2FC0C60033F371 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = T8TH53QYXW;
 					};
 					9FDC71341A2FC0C60033F371 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -219,9 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FDC71281A2FC0C60033F371 /* ViewController.m in Sources */,
+				9FDC71531A2FC18E0033F371 /* OneViewController.m in Sources */,
 				9FDC71251A2FC0C60033F371 /* AppDelegate.m in Sources */,
 				9FDC71221A2FC0C60033F371 /* main.m in Sources */,
+				9FDC71551A2FC18E0033F371 /* TwoViewController.m in Sources */,
+				9FDC71541A2FC18E0033F371 /* ThreeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +362,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Sample-btgvnqjjwzhhgtclajmwhftlyfji/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = ObjCSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +377,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Sample-btgvnqjjwzhhgtclajmwhftlyfji/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = ObjCSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +441,7 @@
 				9FDC71411A2FC0C60033F371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FDC71421A2FC0C60033F371 /* Build configuration list for PBXNativeTarget "ObjCSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +450,7 @@
 				9FDC71441A2FC0C60033F371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
