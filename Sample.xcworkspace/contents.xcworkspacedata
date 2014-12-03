@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SnowGlobeFramework/SnowGlobe.xcodeproj">
+      location = "group:SnowGlobe/SnowGlobe.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:SwiftSample/SwiftSample.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:ObjCSample/ObjCSample.xcodeproj">
    </FileRef>
 </Workspace>
