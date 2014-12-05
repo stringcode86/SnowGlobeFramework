@@ -34,3 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ```
 Build, Run & Shake it!
 
+###About implementation
+The CAEmitterLayer class provides a particle emitter system for Core Animation. The particles are defined by instances of CAEmitterCell. SnowGlobeView overrides UIView’s layerClass method and returns CAEmitterLayer so that UIView becomes backed by CAEmitterLayer rather then CALayer. CAEmitterLayer needs array of CAEmitterCells. Single CAEmitterCell array with contents set to snowFlakeImage.CGImage will suffice. There plenty of properties with ranges to be set on them. For example there is size and sizeRange. Value of size will be random value size +- range. Using these properties with ranges allows us to create convincing dynamic snow storm effect.
+
+You can simply add SnowGlobeView as subview of any view and it will start animating particles upon moving to window. However the use case SnowGlobeView was made for is to add it as subView of UIApplication’s keyWindow and set shakeToSnow property to true. This will create CMMotionManager witch monitors accelerometer and will animate snow fall briefly when threshold is met. Since SnowGlobeView is added as subview of key window you will get snow effect over entire UIViewController hierarchy.
+
+There is lighterSnowMode property, if set to yes snow fall become not as dense.
+
+There are two class methods lightSnowFlakeImage and darkSnowFlakeImage witch provide default snow flake images. You can also set your custom image. Recommended size is 74 X 74 pixels @2x.
