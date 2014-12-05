@@ -9,10 +9,10 @@ Download source form repo. To build and run it on device open Sample.xcworkspace
 1. Copy SnowGlobe folder to YourAwesomeApp project folder.
 2. Drag and drop SnowGlobe.xcodeproj file to your project. I usually create frameworks folder to keep things tidy, but its not necessary
 3. Select your app’s target and click on plus icon to add embedded binary.
-4. 4. Select SnowGlobe.framework
+4. Select SnowGlobe.framework
 ![screenshot](http://www.stringcode.co.uk/stringcode_wordpress/wp-content/uploads/2014/12/tutorial@2x2.png)
 5. Add following code to your AppDelegate.swift or Obj-C equivalent :
-``` html
+``` swift
 import UIKit
 import SnowGlobe
 
