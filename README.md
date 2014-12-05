@@ -1,2 +1,2 @@
-SnowGlobeFreameWork
+SnowGlobeFramework
 ===================
