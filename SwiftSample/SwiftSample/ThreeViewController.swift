@@ -16,5 +16,11 @@ class ThreeViewController: UIViewController {
         let snowGlobeView = SnowGlobeView(frame:view.bounds)
         snowGlobeView.lighterSnowMode = true
         view.insertSubview(snowGlobeView, atIndex: 0)
+//        var any: AnyClass?
+//        any = nil;
+        
+        var any: Any?
+        any = nil
+        
     }
 }

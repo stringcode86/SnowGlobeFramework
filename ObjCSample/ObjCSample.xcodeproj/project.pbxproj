@@ -452,6 +452,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Sample-btgvnqjjwzhhgtclajmwhftlyfji/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = ObjCSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -468,6 +469,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Sample-btgvnqjjwzhhgtclajmwhftlyfji/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = ObjCSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
