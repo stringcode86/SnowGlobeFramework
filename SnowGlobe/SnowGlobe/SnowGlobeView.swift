@@ -128,7 +128,6 @@ public class SnowGlobeView: UIView {
         Animates emitter's lifetime property to 0, causing emitter to stop emitting
     */
     func stopAnimating () {
-        shouldPlaySound = true
         if emitter.presentationLayer() == nil {
             return
         }
@@ -139,6 +138,10 @@ public class SnowGlobeView: UIView {
         anim.setValue(animDuration, forKeyPath: "duration")
         emitter.addAnimation(anim, forKey: lifetimeKey)
         emitter.lifetime = 0.0
+        dispatch_after( dispatch_time( DISPATCH_TIME_NOW, Int64(animDuration * Double(NSEC_PER_SEC))),dispatch_get_main_queue(), {[weak self] ()->() in
+            self?.shouldPlaySound = true
+        })
+
     }
     
     /// Queue that recieves accelerometer updates from CMMotionManager
