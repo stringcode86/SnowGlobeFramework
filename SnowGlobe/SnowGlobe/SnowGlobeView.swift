@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreMotion
+import AudioToolbox
 
 private let lifetimeKey = "lifetime"
 
@@ -19,11 +20,11 @@ public class SnowGlobeView: UIView {
         self.initialSetup()
     }
     
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.initialSetup()
     }
-    
+
     //MARK: - Public
     
     /** 
@@ -42,7 +43,7 @@ public class SnowGlobeView: UIView {
     public var lighterSnowMode: Bool = false {
         didSet {
             if (oldValue != lighterSnowMode) {
-                emitterCell = SnowGlobeView.newEmitterCell(slowSnow: lighterSnowMode, image: snowFlakeImage)
+                emitterCell = SnowGlobeView.newEmitterCell(lighterSnowMode, image: snowFlakeImage)
                 emitter.emitterCells = [emitterCell]
             }
         }
@@ -52,15 +53,17 @@ public class SnowGlobeView: UIView {
     public var snowFlakeImage: UIImage? {
         get {
             if let image: AnyObject = emitterCell.contents {
-                return UIImage(CGImage: image as CGImage)
+                return UIImage(CGImage: image as! CGImage)
             }
             return nil
         }
         set {
-            emitterCell = SnowGlobeView.newEmitterCell(slowSnow: lighterSnowMode, image: newValue)
+            emitterCell = SnowGlobeView.newEmitterCell(lighterSnowMode, image: newValue)
             emitter.emitterCells = [emitterCell]
         }
     }
+    
+    public var soundEffectsEnabled: Bool = true
     
     /// default ligth snow flake image
     public class func lightSnowFlakeImage() -> (UIImage?) {
@@ -101,6 +104,7 @@ public class SnowGlobeView: UIView {
     
     deinit {
         self.shakeToSnow = false
+        AudioServicesDisposeSystemSoundID(sleighBellsSoundId)
     }
     
     //MARK: - Private
@@ -109,8 +113,9 @@ public class SnowGlobeView: UIView {
         Animates emitter's lifetime property to 1, causing emitter to start emitting
     */
     func startAnimating () {
+        playSoundIfNeeded()
         let animDuration = 0.1
-        var anim = CABasicAnimation(keyPath: lifetimeKey)
+        let anim = CABasicAnimation(keyPath: lifetimeKey)
         anim.fromValue = emitter.presentationLayer()?.lifetime
         anim.toValue = 1
         anim.setValue(animDuration, forKeyPath: "duration")
@@ -123,29 +128,30 @@ public class SnowGlobeView: UIView {
         Animates emitter's lifetime property to 0, causing emitter to stop emitting
     */
     func stopAnimating () {
+        shouldPlaySound = true
         if emitter.presentationLayer() == nil {
             return
         }
         let animDuration = 4.0
-        var anim = CAKeyframeAnimation(keyPath: lifetimeKey)
-            anim.values = [emitter.presentationLayer().lifetime, emitter.presentationLayer().lifetime, 0.0]
-            anim.keyTimes = [0.0, 0.5, 1.0]
-            anim.setValue(animDuration, forKeyPath: "duration")
-            emitter.addAnimation(anim, forKey: lifetimeKey)
-            emitter.lifetime = 0.0
+        let anim = CAKeyframeAnimation(keyPath: lifetimeKey)
+        anim.values = [emitter.presentationLayer()!.lifetime, emitter.presentationLayer()!.lifetime, 0.0]
+        anim.keyTimes = [0.0, 0.5, 1.0]
+        anim.setValue(animDuration, forKeyPath: "duration")
+        emitter.addAnimation(anim, forKey: lifetimeKey)
+        emitter.lifetime = 0.0
     }
     
     /// Queue that recieves accelerometer updates from CMMotionManager
     private lazy var queue = NSOperationQueue()
     private lazy var emitterCell: CAEmitterCell = SnowGlobeView.newEmitterCell()
-    private var emitter: CAEmitterLayer {  get { return layer as CAEmitterLayer } }
+    private var emitter: CAEmitterLayer {  get { return layer as! CAEmitterLayer } }
     private var isAnimating : Bool {
         get { return self.emitter.lifetime == 1.0 }
     }
 
     private func initialSetup() {
         backgroundColor = UIColor.clearColor()
-        autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
+        autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         userInteractionEnabled = false
         emitter.emitterCells = [emitterCell]
         emitter.emitterShape = kCAEmitterLayerLine
@@ -160,7 +166,7 @@ public class SnowGlobeView: UIView {
             motionManager.stopAccelerometerUpdates()
         }
         motionManager.startAccelerometerUpdatesToQueue(queue) { [weak self] accelerometerData, error in
-            let data = accelerometerData.acceleration
+            let data = accelerometerData!.acceleration
             var magnitude = sqrt( sq(data.x) + sq(data.y) + sq(data.z) )
             magnitude = (magnitude < 3.0) ? 0.0 : magnitude
             if (magnitude == 0.0 && self?.isAnimating == false) {
@@ -207,9 +213,30 @@ public class SnowGlobeView: UIView {
     class func frameworkImage(named name: String?) -> (UIImage? ) {
         var image: UIImage? = nil
         let frameworkBundle = NSBundle(identifier: "uk.co.stringCode.SnowGlobe")
-        if let imagePath = frameworkBundle?.pathForResource(name?, ofType: "png") {
+        if let imagePath = frameworkBundle?.pathForResource(name, ofType: "png") {
             image = UIImage(contentsOfFile: imagePath)
         }
         return image
     }
+    
+    //MARK: Sound effects
+    
+    private var shouldPlaySound:Bool = true
+    
+    private func playSoundIfNeeded() {
+        if shouldPlaySound && soundEffectsEnabled {
+            shouldPlaySound = false
+            AudioServicesPlaySystemSound(sleighBellsSoundId);
+        }
+    }
+    
+    private lazy var sleighBellsSoundId: SystemSoundID = {
+        var soundId: SystemSoundID = 0
+        if let url = NSBundle.mainBundle().URLForResource("SleighBells", withExtension: "mp3") {
+            AudioServicesCreateSystemSoundID(url, &soundId)
+        } else if let url = NSBundle(identifier: "uk.co.stringCode.SnowGlobe")?.URLForResource("SleighBells", withExtension: "mp3") {
+            AudioServicesCreateSystemSoundID(url, &soundId)
+        }
+        return soundId
+    }()
 }

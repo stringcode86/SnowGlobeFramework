@@ -11,6 +11,6 @@ import SnowGlobe
 class OneViewController: UIViewController {
 
     override func viewDidLoad() {
-        tabBarController?.navigationItem.title = self.navigationItem.title
+        tabBarController?.navigationItem.title = title
     }
 }

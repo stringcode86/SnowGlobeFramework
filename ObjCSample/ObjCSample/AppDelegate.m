@@ -18,6 +18,7 @@
         SnowGlobeView *snowGlobeView = [[SnowGlobeView alloc] initWithFrame:application.keyWindow.bounds];
         snowGlobeView.shakeToSnow = YES;
         [application.keyWindow addSubview:snowGlobeView];
+        self.snowGlobeView = snowGlobeView;
     }
 }
 

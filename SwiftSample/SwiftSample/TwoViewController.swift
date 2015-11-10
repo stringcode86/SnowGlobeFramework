@@ -12,7 +12,7 @@ class TwoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBarController?.navigationItem.title = self.navigationItem.title
+        tabBarController?.navigationItem.title = title
         let snowGlobeView = SnowGlobeView(frame:view.bounds)
         snowGlobeView.snowFlakeImage = SnowGlobeView.darkSnowFlakeImage()
         view.insertSubview(snowGlobeView, atIndex: 0)
