@@ -6,7 +6,7 @@ SnowGlobe.framework its easy to use, open source iOS framework written in swift.
 For more info and better formated docs head over to [here](http://www.stringcode.co.uk/snowglobe-framework-ios-xmas-easter-egg/).<br/>
 If you have any questions / sugestion feel free to tweet at me [@stringcode](https://twitter.com/stringcode).
 
-## Installation
+### Installation
 
 SnowGlobe is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
