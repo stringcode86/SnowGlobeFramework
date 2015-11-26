@@ -7,83 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		203329F33450C35B9EDD09356348D0BC /* Numbers+Extentios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DD3FE3CB3BA1892041E3969FEDC154 /* Numbers+Extentios.swift */; };
-		22987BDD2F8C81A7F1898B2F3CD983C9 /* Pods-SnowGlobe_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7778D8DF40585002ABAF4657C10AF51 /* Pods-SnowGlobe_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D0F3415FA0C88DA5DB17735DC8BDC31 /* Pods-SnowGlobe_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 748E27D7FA857EE5E98341F7BD3F07E9 /* Pods-SnowGlobe_Tests-dummy.m */; };
-		32D5C92FA2C655240A5A32E831AB9EE5 /* SnowGlobe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAF21FBA561EFD6E419B200101E2932 /* SnowGlobe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		488AD4298FBA448F3139C0EC8CC334B2 /* SleighBells.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14DECAF6C8457D48E7A590FF341B5B5A /* SleighBells.mp3 */; };
-		543F4A7D45052A086C8F9830D1DE8D5A /* CMMotionManager+shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B3A443BD923A56A60693309DEBB704 /* CMMotionManager+shared.swift */; };
-		5710F69D136D94E3BA9F2189114E2C83 /* flake2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB56D210795BF8128DB1A828C0642D2 /* flake2@2x.png */; };
-		5A5AD6773D0CAD00BAFA10E03E9A331B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		83CD7DD16D1B6E2EE4486EF30859C694 /* SnowGlobe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 205195AEC027CAD84E69298252814549 /* SnowGlobe-dummy.m */; };
-		99B6AA78F8A4FF67843478B51AC0A002 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		9A1816601886341EFBD4F08BF50282DA /* SnowGlobeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B15FF4246F5F00F4036771FDBF2B31 /* SnowGlobeView.swift */; };
-		AD4C39468EEDF863C6958070B77A2B52 /* Pods-SnowGlobe_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A245F19372530B9A89871C118BE2 /* Pods-SnowGlobe_Example-dummy.m */; };
-		C4BD26C83623475AA5505AF82785BD17 /* SnowGlobe.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C6856262B21783CE1EE824FAEA2F14A1 /* SnowGlobe.bundle */; };
-		D303426EDAC9097922B0D439553A00AD /* flake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA43D04CCE7AE7E1FB43B056BA10BD2F /* flake@2x.png */; };
-		DF9F8B7192355C12D4E14F542498D616 /* Pods-SnowGlobe_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8CAB2CD4B7DC05F197F97EB5C329F7 /* Pods-SnowGlobe_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1453C2FC33B6A90F34905C0B20F9016 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		0C447983969F0144C58CAEC24BD9F540 /* Pods-SnowGlobe_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 748E27D7FA857EE5E98341F7BD3F07E9 /* Pods-SnowGlobe_Tests-dummy.m */; };
+		1EFD987E6B27E314FF2CFD6262628E00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		519382C6F89CED7FFBCBB4307DF9EAEB /* Pods-SnowGlobe_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A245F19372530B9A89871C118BE2 /* Pods-SnowGlobe_Example-dummy.m */; };
+		59073B0E5F8CBC485C53C21097E84B47 /* Pods-SnowGlobe_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7778D8DF40585002ABAF4657C10AF51 /* Pods-SnowGlobe_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6611D9BE5AB626971FF5C2E994894371 /* Pods-SnowGlobe_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8CAB2CD4B7DC05F197F97EB5C329F7 /* Pods-SnowGlobe_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E93BEF717D79E962E3FC6606425490E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09087F43164F5DE60D4ECECC848F8B23 /* PBXContainerItemProxy */ = {
+		2F9A314D8904F09C11E5E1912537F180 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9BEF6BDC90C00267561788298EAEC276;
-			remoteInfo = SnowGlobe;
-		};
-		323857DBB711310545E7E0E74D4D6338 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E0360A380E705BF74FEE83E457D906ED;
+			remoteGlobalIDString = D494C7A6E33681F67AE4A27B4CE90EBE;
 			remoteInfo = "SnowGlobe-SnowGlobe";
 		};
-		AE0D1E07DFBD95A6E15AA824A0485E3A /* PBXContainerItemProxy */ = {
+		6685FC1F593DBB6BC42FEBE9C0E7A728 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9BEF6BDC90C00267561788298EAEC276;
-			remoteInfo = SnowGlobe;
+			remoteGlobalIDString = D494C7A6E33681F67AE4A27B4CE90EBE;
+			remoteInfo = "SnowGlobe-SnowGlobe";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		051105771FE334B936E9F404C5763A0F /* Pods-SnowGlobe_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SnowGlobe_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0AAF21FBA561EFD6E419B200101E2932 /* SnowGlobe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnowGlobe-umbrella.h"; sourceTree = "<group>"; };
-		14DECAF6C8457D48E7A590FF341B5B5A /* SleighBells.mp3 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.mp3; path = SleighBells.mp3; sourceTree = "<group>"; };
 		1E7F3FA8D6356508C486E476BF079C0C /* Pods-SnowGlobe_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SnowGlobe_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		205195AEC027CAD84E69298252814549 /* SnowGlobe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnowGlobe-dummy.m"; sourceTree = "<group>"; };
-		2225868DE5844C7FEAECD1B0E4DFBF97 /* SnowGlobe.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnowGlobe.xcconfig; sourceTree = "<group>"; };
-		23B15FF4246F5F00F4036771FDBF2B31 /* SnowGlobeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SnowGlobeView.swift; sourceTree = "<group>"; };
-		36DD3FE3CB3BA1892041E3969FEDC154 /* Numbers+Extentios.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Numbers+Extentios.swift"; sourceTree = "<group>"; };
+		2ADCEFA721C41725E6D36521B851364D /* SnowGlobe.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowGlobe.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		436C1CD8CF98F4AAA05BDD78413761FB /* Pods-SnowGlobe_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SnowGlobe_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4590D5E9CA0673FD3F7AE938822FC30A /* SnowGlobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnowGlobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B0C51E5E616CDC2C7BDDF1AB37F0D6 /* Pods-SnowGlobe_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnowGlobe_Tests-resources.sh"; sourceTree = "<group>"; };
 		46B9226290EC50732E1E20FA72E20958 /* Pods-SnowGlobe_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SnowGlobe_Example.modulemap"; sourceTree = "<group>"; };
 		4BE146414A1E69418911A3922591C8E8 /* Pods-SnowGlobe_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnowGlobe_Example-resources.sh"; sourceTree = "<group>"; };
 		5A96A245F19372530B9A89871C118BE2 /* Pods-SnowGlobe_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SnowGlobe_Example-dummy.m"; sourceTree = "<group>"; };
 		748E27D7FA857EE5E98341F7BD3F07E9 /* Pods-SnowGlobe_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SnowGlobe_Tests-dummy.m"; sourceTree = "<group>"; };
-		80B3A443BD923A56A60693309DEBB704 /* CMMotionManager+shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CMMotionManager+shared.swift"; sourceTree = "<group>"; };
-		854D6B0883CFAA5E083BD9E5612C6112 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7945E261DEB8DF1AC8080C6532593462 /* Pods_SnowGlobe_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowGlobe_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8816419265C64A7CCC32FF64C1459E9E /* Pods-SnowGlobe_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SnowGlobe_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		902FE7D87265A46E452B6C5B307FACF3 /* Pods-SnowGlobe_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnowGlobe_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		AA43D04CCE7AE7E1FB43B056BA10BD2F /* flake@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "flake@2x.png"; sourceTree = "<group>"; };
-		AFE68E89EBE13A12DA376CC41B1F2C09 /* SnowGlobe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SnowGlobe.modulemap; sourceTree = "<group>"; };
 		B5523896253EAED12A7DDFADBA087203 /* Pods-SnowGlobe_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnowGlobe_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B95BDCBD97D0B760EE17EF5C2CA55193 /* SnowGlobe-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnowGlobe-prefix.pch"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BF8CAB2CD4B7DC05F197F97EB5C329F7 /* Pods-SnowGlobe_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SnowGlobe_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C16CAFF2EEF73206A3BC36375C8104CC /* Pods-SnowGlobe_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SnowGlobe_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C1AAE0F89B29DEBC6A9AE0CC6B31A3CD /* Pods-SnowGlobe_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SnowGlobe_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C6856262B21783CE1EE824FAEA2F14A1 /* SnowGlobe.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowGlobe.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDB56D210795BF8128DB1A828C0642D2 /* flake2@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "flake2@2x.png"; sourceTree = "<group>"; };
+		C4ECF2735D0F4EAAD143118D8DB21B9D /* Pods_SnowGlobe_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowGlobe_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D494616DEF63E59A51AAB343980AFC52 /* Pods-SnowGlobe_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SnowGlobe_Tests.modulemap"; sourceTree = "<group>"; };
 		D6DD4596C66F8BFBC6A51C4405493B8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D73CBD7F7BCDB38904FED88F4124626B /* Pods_SnowGlobe_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowGlobe_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7C4A51612644E21E4648D8760E89F7E /* Pods_SnowGlobe_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowGlobe_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3894B22B3AB6BFAF9C9CF7E2FE20B94 /* Pods-SnowGlobe_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SnowGlobe_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F7778D8DF40585002ABAF4657C10AF51 /* Pods-SnowGlobe_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SnowGlobe_Example-umbrella.h"; sourceTree = "<group>"; };
 		F962F851154F175868D040ABA381EF6F /* Pods-SnowGlobe_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SnowGlobe_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,70 +61,32 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3C1249B3E8A317C103EAE4D703A5E588 /* Frameworks */ = {
+		0518B895753158D75C34E4692358D677 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E93BEF717D79E962E3FC6606425490E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC45B146D795D8B50DB358D6980ADDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		505AC3E7C02AAD1488D2ECEE15FC4642 /* Frameworks */ = {
+		2D2E8CD7EB292E3D632201EE7C697EA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1453C2FC33B6A90F34905C0B20F9016 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5A10101C1E2BC95690A802DF51C4FFB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5A5AD6773D0CAD00BAFA10E03E9A331B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E6B15FE2D44C61F2FAEC477063654FA7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99B6AA78F8A4FF67843478B51AC0A002 /* Foundation.framework in Frameworks */,
+				1EFD987E6B27E314FF2CFD6262628E00 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F031A22B2755C3EEE88669D44E5A6D2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DFC841C9881CCA5C5E54087B2BA5F105 /* Pod */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		22CFA32F890429DD1C6F59895EABDDBE /* SnowGlobe */ = {
-			isa = PBXGroup;
-			children = (
-				6ADC5D38BE779AE53F51FAA8A85ACA85 /* Pod */,
-				1F031A22B2755C3EEE88669D44E5A6D2 /* Resources */,
-				86D0005025F8A92BCEB51575C3F194E8 /* Support Files */,
-			);
-			name = SnowGlobe;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		2444D6644541B631169AB289F1832B13 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D7C4A51612644E21E4648D8760E89F7E /* Pods_SnowGlobe_Example.framework */,
-				D73CBD7F7BCDB38904FED88F4124626B /* Pods_SnowGlobe_Tests.framework */,
-				C6856262B21783CE1EE824FAEA2F14A1 /* SnowGlobe.bundle */,
-				4590D5E9CA0673FD3F7AE938822FC30A /* SnowGlobe.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		44D8486FC77965DE546D2A303ADF68C5 /* Pods-SnowGlobe_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,65 +114,33 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5FB02645A7D4AA0D897B426BD75393A5 /* Classes */ = {
+		65442AAE66D0361E697A341581829D10 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				80B3A443BD923A56A60693309DEBB704 /* CMMotionManager+shared.swift */,
-				36DD3FE3CB3BA1892041E3969FEDC154 /* Numbers+Extentios.swift */,
-				23B15FF4246F5F00F4036771FDBF2B31 /* SnowGlobeView.swift */,
+				E7CF110A01E732FF549253762A5FAB83 /* SnowGlobe */,
 			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		6ADC5D38BE779AE53F51FAA8A85ACA85 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				5FB02645A7D4AA0D897B426BD75393A5 /* Classes */,
-			);
-			path = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				9C28837707CDFA8ADF4EFAE295879811 /* Development Pods */,
+				65442AAE66D0361E697A341581829D10 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				2444D6644541B631169AB289F1832B13 /* Products */,
+				AFDEB27A362F068CB8C8FB5EED2CE525 /* Products */,
 				557AA0954446E1D328DFF222EE1CB657 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		86D0005025F8A92BCEB51575C3F194E8 /* Support Files */ = {
+		AFDEB27A362F068CB8C8FB5EED2CE525 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				854D6B0883CFAA5E083BD9E5612C6112 /* Info.plist */,
-				AFE68E89EBE13A12DA376CC41B1F2C09 /* SnowGlobe.modulemap */,
-				2225868DE5844C7FEAECD1B0E4DFBF97 /* SnowGlobe.xcconfig */,
-				205195AEC027CAD84E69298252814549 /* SnowGlobe-dummy.m */,
-				B95BDCBD97D0B760EE17EF5C2CA55193 /* SnowGlobe-prefix.pch */,
-				0AAF21FBA561EFD6E419B200101E2932 /* SnowGlobe-umbrella.h */,
+				7945E261DEB8DF1AC8080C6532593462 /* Pods_SnowGlobe_Example.framework */,
+				C4ECF2735D0F4EAAD143118D8DB21B9D /* Pods_SnowGlobe_Tests.framework */,
+				2ADCEFA721C41725E6D36521B851364D /* SnowGlobe.bundle */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SnowGlobe";
-			sourceTree = "<group>";
-		};
-		9C28837707CDFA8ADF4EFAE295879811 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				22CFA32F890429DD1C6F59895EABDDBE /* SnowGlobe */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		B805C425D84C0D3CCD578B2EFFCF955D /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				CDB56D210795BF8128DB1A828C0642D2 /* flake2@2x.png */,
-				AA43D04CCE7AE7E1FB43B056BA10BD2F /* flake@2x.png */,
-				14DECAF6C8457D48E7A590FF341B5B5A /* SleighBells.mp3 */,
-			);
-			path = Assets;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -277,106 +177,61 @@
 			path = "Target Support Files/Pods-SnowGlobe_Example";
 			sourceTree = "<group>";
 		};
-		DFC841C9881CCA5C5E54087B2BA5F105 /* Pod */ = {
+		E7CF110A01E732FF549253762A5FAB83 /* SnowGlobe */ = {
 			isa = PBXGroup;
 			children = (
-				B805C425D84C0D3CCD578B2EFFCF955D /* Assets */,
 			);
-			path = Pod;
+			name = SnowGlobe;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		35305D04516D021624885B90541D2CC6 /* Headers */ = {
+		6D8EE5787F43664760C56F5A574ACB0E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22987BDD2F8C81A7F1898B2F3CD983C9 /* Pods-SnowGlobe_Example-umbrella.h in Headers */,
+				59073B0E5F8CBC485C53C21097E84B47 /* Pods-SnowGlobe_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6612E60008D02D6028BFF1467717BFDF /* Headers */ = {
+		8B83C168236752C89224CAB452285AAC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF9F8B7192355C12D4E14F542498D616 /* Pods-SnowGlobe_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87DC4C1DEE92649DD653B315E4E08FBC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				32D5C92FA2C655240A5A32E831AB9EE5 /* SnowGlobe-umbrella.h in Headers */,
+				6611D9BE5AB626971FF5C2E994894371 /* Pods-SnowGlobe_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		60408AAB17FB18EAB024FF6DE22F0056 /* Pods-SnowGlobe_Tests */ = {
+		75D36EDF8A429728C1AB09A72A917BCE /* Pods-SnowGlobe_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A16D620D0CB829E4C3B51DFD6B646DD /* Build configuration list for PBXNativeTarget "Pods-SnowGlobe_Tests" */;
+			buildConfigurationList = E27787E25863891D3D87B05842D0986F /* Build configuration list for PBXNativeTarget "Pods-SnowGlobe_Example" */;
 			buildPhases = (
-				67BC9117182B56928452EBDB0B05010F /* Sources */,
-				505AC3E7C02AAD1488D2ECEE15FC4642 /* Frameworks */,
-				6612E60008D02D6028BFF1467717BFDF /* Headers */,
+				A8691BD199B5CF283637DECD3B348E62 /* Sources */,
+				2D2E8CD7EB292E3D632201EE7C697EA0 /* Frameworks */,
+				6D8EE5787F43664760C56F5A574ACB0E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1ADB33C6D80BB02EEECF04D9F0FACC5B /* PBXTargetDependency */,
-			);
-			name = "Pods-SnowGlobe_Tests";
-			productName = "Pods-SnowGlobe_Tests";
-			productReference = D73CBD7F7BCDB38904FED88F4124626B /* Pods_SnowGlobe_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9BEF6BDC90C00267561788298EAEC276 /* SnowGlobe */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E459DE1804E9E33C90A05DB1072879E8 /* Build configuration list for PBXNativeTarget "SnowGlobe" */;
-			buildPhases = (
-				D9EA68AD5DF8167526AD00A532B87602 /* Sources */,
-				A5A10101C1E2BC95690A802DF51C4FFB /* Frameworks */,
-				71AEE6D86342E13DC8DEDD8C117BD4BD /* Resources */,
-				87DC4C1DEE92649DD653B315E4E08FBC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				791AB2D2D3629E827BAAAFFD819FE279 /* PBXTargetDependency */,
-			);
-			name = SnowGlobe;
-			productName = SnowGlobe;
-			productReference = 4590D5E9CA0673FD3F7AE938822FC30A /* SnowGlobe.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DF5CBA1762183E9378C176902F73A659 /* Pods-SnowGlobe_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E7321FAF0D4327178BA7E6F8C0323FC7 /* Build configuration list for PBXNativeTarget "Pods-SnowGlobe_Example" */;
-			buildPhases = (
-				9C7C4F72F065DA3D06472AE362F356F9 /* Sources */,
-				E6B15FE2D44C61F2FAEC477063654FA7 /* Frameworks */,
-				35305D04516D021624885B90541D2CC6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5BCC847DC8EE881B63F1AD7C121C7B62 /* PBXTargetDependency */,
+				C5981DCADD82F73CE2DCEACC0715DD53 /* PBXTargetDependency */,
 			);
 			name = "Pods-SnowGlobe_Example";
 			productName = "Pods-SnowGlobe_Example";
-			productReference = D7C4A51612644E21E4648D8760E89F7E /* Pods_SnowGlobe_Example.framework */;
+			productReference = 7945E261DEB8DF1AC8080C6532593462 /* Pods_SnowGlobe_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E0360A380E705BF74FEE83E457D906ED /* SnowGlobe-SnowGlobe */ = {
+		D494C7A6E33681F67AE4A27B4CE90EBE /* SnowGlobe-SnowGlobe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64B31FFABDFEC4D92BD5E0BBF78BC5E5 /* Build configuration list for PBXNativeTarget "SnowGlobe-SnowGlobe" */;
+			buildConfigurationList = B1B00CF6DEB67330A8AA53ED20AE3FFB /* Build configuration list for PBXNativeTarget "SnowGlobe-SnowGlobe" */;
 			buildPhases = (
-				7EE6F404740822B5E79A72E2B6513AC6 /* Sources */,
-				3C1249B3E8A317C103EAE4D703A5E588 /* Frameworks */,
-				B8EE8CD0161531E041F3D5C3053EA804 /* Resources */,
+				6D9B472E5C314DF47DC038F4399FEC59 /* Sources */,
+				1CC45B146D795D8B50DB358D6980ADDB /* Frameworks */,
+				A40F84397C618524FF506153EF3A7691 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -384,8 +239,26 @@
 			);
 			name = "SnowGlobe-SnowGlobe";
 			productName = "SnowGlobe-SnowGlobe";
-			productReference = C6856262B21783CE1EE824FAEA2F14A1 /* SnowGlobe.bundle */;
+			productReference = 2ADCEFA721C41725E6D36521B851364D /* SnowGlobe.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		D4AD4912CE6CF414D691A4C395D7C89B /* Pods-SnowGlobe_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60B8EA596D0A4D9E6B5B40A48C0DADD /* Build configuration list for PBXNativeTarget "Pods-SnowGlobe_Tests" */;
+			buildPhases = (
+				042F1853B052D83B93A850DDBF0255FD /* Sources */,
+				0518B895753158D75C34E4692358D677 /* Frameworks */,
+				8B83C168236752C89224CAB452285AAC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E6C62E51CB20196DF55344D2B521441 /* PBXTargetDependency */,
+			);
+			name = "Pods-SnowGlobe_Tests";
+			productName = "Pods-SnowGlobe_Tests";
+			productReference = C4ECF2735D0F4EAAD143118D8DB21B9D /* Pods_SnowGlobe_Tests.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -404,98 +277,129 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 2444D6644541B631169AB289F1832B13 /* Products */;
+			productRefGroup = AFDEB27A362F068CB8C8FB5EED2CE525 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF5CBA1762183E9378C176902F73A659 /* Pods-SnowGlobe_Example */,
-				60408AAB17FB18EAB024FF6DE22F0056 /* Pods-SnowGlobe_Tests */,
-				9BEF6BDC90C00267561788298EAEC276 /* SnowGlobe */,
-				E0360A380E705BF74FEE83E457D906ED /* SnowGlobe-SnowGlobe */,
+				75D36EDF8A429728C1AB09A72A917BCE /* Pods-SnowGlobe_Example */,
+				D4AD4912CE6CF414D691A4C395D7C89B /* Pods-SnowGlobe_Tests */,
+				D494C7A6E33681F67AE4A27B4CE90EBE /* SnowGlobe-SnowGlobe */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		71AEE6D86342E13DC8DEDD8C117BD4BD /* Resources */ = {
+		A40F84397C618524FF506153EF3A7691 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4BD26C83623475AA5505AF82785BD17 /* SnowGlobe.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8EE8CD0161531E041F3D5C3053EA804 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5710F69D136D94E3BA9F2189114E2C83 /* flake2@2x.png in Resources */,
-				D303426EDAC9097922B0D439553A00AD /* flake@2x.png in Resources */,
-				488AD4298FBA448F3139C0EC8CC334B2 /* SleighBells.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		67BC9117182B56928452EBDB0B05010F /* Sources */ = {
+		042F1853B052D83B93A850DDBF0255FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D0F3415FA0C88DA5DB17735DC8BDC31 /* Pods-SnowGlobe_Tests-dummy.m in Sources */,
+				0C447983969F0144C58CAEC24BD9F540 /* Pods-SnowGlobe_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EE6F404740822B5E79A72E2B6513AC6 /* Sources */ = {
+		6D9B472E5C314DF47DC038F4399FEC59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C7C4F72F065DA3D06472AE362F356F9 /* Sources */ = {
+		A8691BD199B5CF283637DECD3B348E62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD4C39468EEDF863C6958070B77A2B52 /* Pods-SnowGlobe_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9EA68AD5DF8167526AD00A532B87602 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				543F4A7D45052A086C8F9830D1DE8D5A /* CMMotionManager+shared.swift in Sources */,
-				203329F33450C35B9EDD09356348D0BC /* Numbers+Extentios.swift in Sources */,
-				83CD7DD16D1B6E2EE4486EF30859C694 /* SnowGlobe-dummy.m in Sources */,
-				9A1816601886341EFBD4F08BF50282DA /* SnowGlobeView.swift in Sources */,
+				519382C6F89CED7FFBCBB4307DF9EAEB /* Pods-SnowGlobe_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1ADB33C6D80BB02EEECF04D9F0FACC5B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SnowGlobe;
-			target = 9BEF6BDC90C00267561788298EAEC276 /* SnowGlobe */;
-			targetProxy = AE0D1E07DFBD95A6E15AA824A0485E3A /* PBXContainerItemProxy */;
-		};
-		5BCC847DC8EE881B63F1AD7C121C7B62 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SnowGlobe;
-			target = 9BEF6BDC90C00267561788298EAEC276 /* SnowGlobe */;
-			targetProxy = 09087F43164F5DE60D4ECECC848F8B23 /* PBXContainerItemProxy */;
-		};
-		791AB2D2D3629E827BAAAFFD819FE279 /* PBXTargetDependency */ = {
+		1E6C62E51CB20196DF55344D2B521441 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SnowGlobe-SnowGlobe";
-			target = E0360A380E705BF74FEE83E457D906ED /* SnowGlobe-SnowGlobe */;
-			targetProxy = 323857DBB711310545E7E0E74D4D6338 /* PBXContainerItemProxy */;
+			target = D494C7A6E33681F67AE4A27B4CE90EBE /* SnowGlobe-SnowGlobe */;
+			targetProxy = 6685FC1F593DBB6BC42FEBE9C0E7A728 /* PBXContainerItemProxy */;
+		};
+		C5981DCADD82F73CE2DCEACC0715DD53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SnowGlobe-SnowGlobe";
+			target = D494C7A6E33681F67AE4A27B4CE90EBE /* SnowGlobe-SnowGlobe */;
+			targetProxy = 2F9A314D8904F09C11E5E1912537F180 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		01E4BCBAFD116DABDB55D0F967FB36C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C16CAFF2EEF73206A3BC36375C8104CC /* Pods-SnowGlobe_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SnowGlobe_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SnowGlobe_Tests/Pods-SnowGlobe_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SnowGlobe_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0FA3669D46423905B3A524C23A8827A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436C1CD8CF98F4AAA05BDD78413761FB /* Pods-SnowGlobe_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SnowGlobe_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SnowGlobe_Example/Pods-SnowGlobe_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SnowGlobe_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -569,111 +473,8 @@
 			};
 			name = Debug;
 		};
-		7B9EC060EFF869AD517DCE0D014FC1B1 /* Debug */ = {
+		AA2FBBED49942AC5362C3F28235639CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2225868DE5844C7FEAECD1B0E4DFBF97 /* SnowGlobe.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = SnowGlobe;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		90F0E7256E32DB493770964721FB12CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2225868DE5844C7FEAECD1B0E4DFBF97 /* SnowGlobe.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SnowGlobe/SnowGlobe-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnowGlobe/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SnowGlobe/SnowGlobe.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SnowGlobe;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A63CE8D7B0CCB4116FC965FC6E27FE06 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C16CAFF2EEF73206A3BC36375C8104CC /* Pods-SnowGlobe_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SnowGlobe_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SnowGlobe_Tests/Pods-SnowGlobe_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_SnowGlobe_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AE2446F1DE0A704743A3424CEC386DC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 436C1CD8CF98F4AAA05BDD78413761FB /* Pods-SnowGlobe_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SnowGlobe_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SnowGlobe_Example/Pods-SnowGlobe_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_SnowGlobe_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B9E231025F1ED93B335A756678CF52D5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2225868DE5844C7FEAECD1B0E4DFBF97 /* SnowGlobe.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = SnowGlobe;
@@ -683,7 +484,7 @@
 			};
 			name = Release;
 		};
-		C440DB5EABC6E3D7B734B62F9E617798 /* Release */ = {
+		B074736B22B88CFA86EFB06F1F09A34A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F962F851154F175868D040ABA381EF6F /* Pods-SnowGlobe_Example.release.xcconfig */;
 			buildSettings = {
@@ -713,7 +514,7 @@
 			};
 			name = Release;
 		};
-		E847B50FC3C2D1FC0CC56C85C275E86A /* Release */ = {
+		FE4048BD302202B4CFDDC59C15F6B8FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F3894B22B3AB6BFAF9C9CF7E2FE20B94 /* Pods-SnowGlobe_Tests.release.xcconfig */;
 			buildSettings = {
@@ -743,32 +544,16 @@
 			};
 			name = Release;
 		};
-		F1431735E8DFFF30F9A3EAD3BA6CEDAE /* Release */ = {
+		FF5F953FDEBE34CD2EC2D875184EAB9D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2225868DE5844C7FEAECD1B0E4DFBF97 /* SnowGlobe.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SnowGlobe/SnowGlobe-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnowGlobe/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SnowGlobe/SnowGlobe.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SnowGlobe;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -782,38 +567,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64B31FFABDFEC4D92BD5E0BBF78BC5E5 /* Build configuration list for PBXNativeTarget "SnowGlobe-SnowGlobe" */ = {
+		B1B00CF6DEB67330A8AA53ED20AE3FFB /* Build configuration list for PBXNativeTarget "SnowGlobe-SnowGlobe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B9EC060EFF869AD517DCE0D014FC1B1 /* Debug */,
-				B9E231025F1ED93B335A756678CF52D5 /* Release */,
+				FF5F953FDEBE34CD2EC2D875184EAB9D /* Debug */,
+				AA2FBBED49942AC5362C3F28235639CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A16D620D0CB829E4C3B51DFD6B646DD /* Build configuration list for PBXNativeTarget "Pods-SnowGlobe_Tests" */ = {
+		E27787E25863891D3D87B05842D0986F /* Build configuration list for PBXNativeTarget "Pods-SnowGlobe_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A63CE8D7B0CCB4116FC965FC6E27FE06 /* Debug */,
-				E847B50FC3C2D1FC0CC56C85C275E86A /* Release */,
+				0FA3669D46423905B3A524C23A8827A7 /* Debug */,
+				B074736B22B88CFA86EFB06F1F09A34A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E459DE1804E9E33C90A05DB1072879E8 /* Build configuration list for PBXNativeTarget "SnowGlobe" */ = {
+		F60B8EA596D0A4D9E6B5B40A48C0DADD /* Build configuration list for PBXNativeTarget "Pods-SnowGlobe_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				90F0E7256E32DB493770964721FB12CC /* Debug */,
-				F1431735E8DFFF30F9A3EAD3BA6CEDAE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E7321FAF0D4327178BA7E6F8C0323FC7 /* Build configuration list for PBXNativeTarget "Pods-SnowGlobe_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AE2446F1DE0A704743A3424CEC386DC3 /* Debug */,
-				C440DB5EABC6E3D7B734B62F9E617798 /* Release */,
+				01E4BCBAFD116DABDB55D0F967FB36C0 /* Debug */,
+				FE4048BD302202B4CFDDC59C15F6B8FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
