@@ -6,8 +6,17 @@ SnowGlobe.framework its easy to use, open source iOS framework written in swift.
 For more info and better formated docs head over to [here](http://www.stringcode.co.uk/snowglobe-framework-ios-xmas-easter-egg/).<br/>
 If you have any questions / sugestion feel free to tweet at me [@stringcode](https://twitter.com/stringcode).
 
+## Installation
 
-###How to build and run sample project
+SnowGlobe is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "SnowGlobe"
+```
+
+###How to build and run sample project without CocoaPods
+
 Download source form repo. To build and run it on device open Sample.xcworkspace. This workspace contains three projects. SnowGlobe framework project, Swift and Objective-C sample projects. Select either SwiftSample or ObjCSample schema. You’ll have to set up code signing to run on the device. Select either Swift/ObjCSample target and choose your team. Sample app demonstrates three ways you can use SnowGlobeView. My original use case was to ad SnowGlobeView as subview of application’s keyWindow. That way when user shakes the device, snow layer is over any ViewController’s view. For more detail check out about implementation section.
 
 ###How to add to your project
