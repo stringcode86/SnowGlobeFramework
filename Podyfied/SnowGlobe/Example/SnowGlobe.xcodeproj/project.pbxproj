@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		2855153833CAB99A1842612F /* Pods_SnowGlobe_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF9166D4F4867E7FF847A2A /* Pods_SnowGlobe_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		9F34D2E71C0768D700F6126B /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F34D2E41C0768D700F6126B /* OneViewController.swift */; };
+		9F34D2E81C0768D700F6126B /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F34D2E51C0768D700F6126B /* ThreeViewController.swift */; };
+		9F34D2E91C0768D700F6126B /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F34D2E61C0768D700F6126B /* TwoViewController.swift */; };
 		FF77D13657FDC4ED4DA2015E /* Pods_SnowGlobe_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6297DEC2A428EA8CDA28D3C /* Pods_SnowGlobe_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +35,6 @@
 		607FACD01AFB9204008FA782 /* SnowGlobe_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowGlobe_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -44,6 +45,9 @@
 		72BE0F51D31FA1CF397560C1 /* SnowGlobe.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SnowGlobe.podspec; path = ../SnowGlobe.podspec; sourceTree = "<group>"; };
 		769AD9D058F85B52A9F9FFDB /* Pods-SnowGlobe_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnowGlobe_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnowGlobe_Example/Pods-SnowGlobe_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9CF9166D4F4867E7FF847A2A /* Pods_SnowGlobe_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowGlobe_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F34D2E41C0768D700F6126B /* OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		9F34D2E51C0768D700F6126B /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		9F34D2E61C0768D700F6126B /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		C3979C8F54787B7F1F6A481A /* Pods-SnowGlobe_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnowGlobe_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnowGlobe_Tests/Pods-SnowGlobe_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6297DEC2A428EA8CDA28D3C /* Pods_SnowGlobe_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowGlobe_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6860F27F7308F6F14AB2DAD /* Pods-SnowGlobe_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnowGlobe_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnowGlobe_Example/Pods-SnowGlobe_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,7 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				9F34D2E41C0768D700F6126B /* OneViewController.swift */,
+				9F34D2E51C0768D700F6126B /* ThreeViewController.swift */,
+				9F34D2E61C0768D700F6126B /* TwoViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -359,8 +365,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				9F34D2E91C0768D700F6126B /* TwoViewController.swift in Sources */,
+				9F34D2E71C0768D700F6126B /* OneViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				9F34D2E81C0768D700F6126B /* ThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,8 +12,10 @@
 		32D5C92FA2C655240A5A32E831AB9EE5 /* SnowGlobe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28A53A2D2AFDAE16D3F4BF095EAF268A /* SnowGlobe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A5AD6773D0CAD00BAFA10E03E9A331B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		99B6AA78F8A4FF67843478B51AC0A002 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		9F34D2E11C07681000F6126B /* CMMotionManager+shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F34D2DE1C07681000F6126B /* CMMotionManager+shared.swift */; };
+		9F34D2E21C07681000F6126B /* Numbers+Extentios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F34D2DF1C07681000F6126B /* Numbers+Extentios.swift */; };
+		9F34D2E31C07681000F6126B /* SnowGlobeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F34D2E01C07681000F6126B /* SnowGlobeView.swift */; };
 		AD4C39468EEDF863C6958070B77A2B52 /* Pods-SnowGlobe_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A245F19372530B9A89871C118BE2 /* Pods-SnowGlobe_Example-dummy.m */; };
-		C284762D3D679804F941B80D5DC4F065 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D570289A013369B50433B2A1C6053AAF /* ReplaceMe.swift */; };
 		C4BD26C83623475AA5505AF82785BD17 /* SnowGlobe.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C6856262B21783CE1EE824FAEA2F14A1 /* SnowGlobe.bundle */; };
 		CF91F7A7E40D1D00A64EC1611EFE0C44 /* SnowGlobe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4E58026BE629E24D652EF96254EFC /* SnowGlobe-dummy.m */; };
 		DF9F8B7192355C12D4E14F542498D616 /* Pods-SnowGlobe_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8CAB2CD4B7DC05F197F97EB5C329F7 /* Pods-SnowGlobe_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -62,6 +64,9 @@
 		8816419265C64A7CCC32FF64C1459E9E /* Pods-SnowGlobe_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SnowGlobe_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		902FE7D87265A46E452B6C5B307FACF3 /* Pods-SnowGlobe_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnowGlobe_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		9D77BE3A338031C563CC6A5EB9B90920 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F34D2DE1C07681000F6126B /* CMMotionManager+shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMMotionManager+shared.swift"; sourceTree = "<group>"; };
+		9F34D2DF1C07681000F6126B /* Numbers+Extentios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Numbers+Extentios.swift"; sourceTree = "<group>"; };
+		9F34D2E01C07681000F6126B /* SnowGlobeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowGlobeView.swift; sourceTree = "<group>"; };
 		ADBC0B7ADC20577090A5409A4EA4FDCD /* SnowGlobe-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnowGlobe-prefix.pch"; sourceTree = "<group>"; };
 		B5523896253EAED12A7DDFADBA087203 /* Pods-SnowGlobe_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnowGlobe_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -70,7 +75,6 @@
 		C1AAE0F89B29DEBC6A9AE0CC6B31A3CD /* Pods-SnowGlobe_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SnowGlobe_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C6856262B21783CE1EE824FAEA2F14A1 /* SnowGlobe.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowGlobe.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D494616DEF63E59A51AAB343980AFC52 /* Pods-SnowGlobe_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SnowGlobe_Tests.modulemap"; sourceTree = "<group>"; };
-		D570289A013369B50433B2A1C6053AAF /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		D6DD4596C66F8BFBC6A51C4405493B8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D73CBD7F7BCDB38904FED88F4124626B /* Pods_SnowGlobe_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowGlobe_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C4A51612644E21E4648D8760E89F7E /* Pods_SnowGlobe_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowGlobe_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,7 +231,9 @@
 		D68FFC9794CC5EDD776968ECD0F2BC5C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D570289A013369B50433B2A1C6053AAF /* ReplaceMe.swift */,
+				9F34D2DE1C07681000F6126B /* CMMotionManager+shared.swift */,
+				9F34D2DF1C07681000F6126B /* Numbers+Extentios.swift */,
+				9F34D2E01C07681000F6126B /* SnowGlobeView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -354,7 +360,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -415,6 +421,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F34D2E11C07681000F6126B /* CMMotionManager+shared.swift in Sources */,
+				9F34D2E31C07681000F6126B /* SnowGlobeView.swift in Sources */,
+				9F34D2E21C07681000F6126B /* Numbers+Extentios.swift in Sources */,
 				AD4C39468EEDF863C6958070B77A2B52 /* Pods-SnowGlobe_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,7 +432,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C284762D3D679804F941B80D5DC4F065 /* ReplaceMe.swift in Sources */,
 				CF91F7A7E40D1D00A64EC1611EFE0C44 /* SnowGlobe-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,6 +608,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 436C1CD8CF98F4AAA05BDD78413761FB /* Pods-SnowGlobe_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -643,6 +652,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F962F851154F175868D040ABA381EF6F /* Pods-SnowGlobe_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

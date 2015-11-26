@@ -24,7 +24,7 @@ DESC
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "stringcode" => "michael@stringcode.co.uk" }
-  s.source           = { :git => "https://github.com/stringcode86/SnowGlobeFramework/tree/master/Podyfied/SnowGlobe", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/stringcode86/SnowGlobeFramework.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/stringcode'
 
   s.platform     = :ios, '8.1'
@@ -39,3 +39,4 @@ DESC
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
+
