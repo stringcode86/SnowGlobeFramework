@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'SnowGlobe_Example', :exclusive => true do
+  pod "SnowGlobe", :path => "../"
+end
+
+target 'SnowGlobe_Tests', :exclusive => true do
+  pod "SnowGlobe", :path => "../"
+
+  
+end

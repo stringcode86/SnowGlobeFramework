@@ -1,0 +1,6 @@
+framework module SnowGlobe {
+  umbrella header "SnowGlobe-umbrella.h"
+
+  export *
+  module * { export * }
+}
