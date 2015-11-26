@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SnowGlobe"
-  s.version          = "1.9.0"
+  s.version          = "1.9.1"
   s.summary          = "Delightful / cheesy Christmas easter egg to. Shake iPhone to snow"
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ DESC
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'SnowGlobe' => ['Pod/Assets/*.png']
+    'SnowGlobe' => ['Pod/Assets/*.*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

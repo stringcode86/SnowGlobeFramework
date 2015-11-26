@@ -218,6 +218,10 @@ public class SnowGlobeView: UIView {
         let frameworkBundle = NSBundle(identifier: "uk.co.stringCode.SnowGlobe")
         if let imagePath = frameworkBundle?.pathForResource(name, ofType: "png") {
             image = UIImage(contentsOfFile: imagePath)
+        } else if let cocoaPodBundlePath =  NSBundle(forClass: SnowGlobeView.self).pathForResource("SnowGlobe", ofType: "bundle") {
+            if let imagePath = NSBundle(path: cocoaPodBundlePath)?.pathForResource(name, ofType: "png") {
+                image = UIImage(contentsOfFile: imagePath)
+            }
         }
         return image
     }
@@ -239,6 +243,10 @@ public class SnowGlobeView: UIView {
             AudioServicesCreateSystemSoundID(url, &soundId)
         } else if let url = NSBundle(identifier: "uk.co.stringCode.SnowGlobe")?.URLForResource("SleighBells", withExtension: "mp3") {
             AudioServicesCreateSystemSoundID(url, &soundId)
+        } else if let cocoaPodBundlePath =  NSBundle(forClass: SnowGlobeView.self).pathForResource("SnowGlobe", ofType: "bundle") {
+            if let url = NSBundle(path: cocoaPodBundlePath)?.URLForResource("SleighBells", withExtension: "mp3") {
+                AudioServicesCreateSystemSoundID(url, &soundId)
+            }
         }
         return soundId
     }()

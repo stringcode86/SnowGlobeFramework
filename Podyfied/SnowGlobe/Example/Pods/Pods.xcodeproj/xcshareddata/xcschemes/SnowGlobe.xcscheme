@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '62BFF1EF792E0355D39E37E6'
+               BlueprintIdentifier = '6210F019CB52047A63BCF9F9'
                BlueprintName = 'SnowGlobe'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SnowGlobe.framework'>
