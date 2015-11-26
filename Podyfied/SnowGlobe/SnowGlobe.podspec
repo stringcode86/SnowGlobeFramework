@@ -16,7 +16,9 @@ Pod::Spec.new do |s|
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC SnowGlobe.framework its easy to use, open source iOS framework written in swift. It allows you to ad delightful / cheesy Christmas easter egg to your awesome app for holiday season. When user shakes the device, your app “turns into a snow globe”. Leveraging CAEmitterLayer to create snow fall, snow globe like animation while device is shaken. I am a sucker for that kinda of thing. I don’t see anything wrong with falling for spirit of the holiday season and getting bit cheesy.DESC
+  s.description      = <<-DESC
+SnowGlobe.framework its easy to use, open source iOS framework written in swift. It allows you to ad delightful / cheesy Christmas easter egg to your awesome app for holiday season. When user shakes the device, your app “turns into a snow globe”. Leveraging CAEmitterLayer to create snow fall, snow globe like animation while device is shaken. I am a sucker for that kinda of thing. I don’t see anything wrong with falling for spirit of the holiday season and getting bit cheesy.
+DESC
 
   s.homepage         = "http://www.stringcode.co.uk/snowglobe-framework-ios-xmas-easter-egg-shake-iphone-to-make-it-snow/"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
