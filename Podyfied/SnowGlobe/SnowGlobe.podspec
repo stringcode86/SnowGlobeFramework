@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-SnowGlobe.framework its easy to use, open source iOS framework written in swift. It allows you to ad delightful / cheesy Christmas easter egg to your awesome app for holiday season. When user shakes the device, your app “turns into a snow globe”. Leveraging CAEmitterLayer to create snow fall, snow globe like animation while device is shaken. I am a sucker for that kinda of thing. I don’t see anything wrong with falling for spirit of the holiday season and getting bit cheesy.
+SnowGlobe.framework its easy to use, open source iOS framework written in swift. It allows you to add a delightful / cheesy Christmas easter egg to your awesome app for holiday season. When user shakes the device, your app “turns into a snow globe”. Leveraging CAEmitterLayer to create snow fall, snow globe like animation while device is shaken. I am a sucker for that kinda of thing. I don’t see anything wrong with falling for spirit of the holiday season and getting bit cheesy.
 DESC
 
   s.homepage         = "http://www.stringcode.co.uk/snowglobe-framework-ios-xmas-easter-egg-shake-iphone-to-make-it-snow/"
@@ -27,7 +27,7 @@ DESC
   s.source           = { :git => "https://github.com/stringcode86/SnowGlobeFramework.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/stringcode'
 
-  s.platform     = :ios, '8.1'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Podyfied/SnowGlobe/Pod/Classes/**/*'
