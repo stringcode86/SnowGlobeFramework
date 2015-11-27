@@ -49,7 +49,6 @@
 		7945E261DEB8DF1AC8080C6532593462 /* Pods_SnowGlobe_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowGlobe_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8816419265C64A7CCC32FF64C1459E9E /* Pods-SnowGlobe_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SnowGlobe_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		902FE7D87265A46E452B6C5B307FACF3 /* Pods-SnowGlobe_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnowGlobe_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		9F74D0BF1C08A23200F53A5D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		9F74D0C01C08A23200F53A5D /* flake2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flake2@2x.png"; sourceTree = "<group>"; };
 		9F74D0C11C08A23200F53A5D /* flake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flake@2x.png"; sourceTree = "<group>"; };
 		9F74D0C21C08A23200F53A5D /* SleighBells.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SleighBells.mp3; sourceTree = "<group>"; };
@@ -146,7 +145,6 @@
 		9F74D0BE1C08A23200F53A5D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9F74D0BF1C08A23200F53A5D /* .gitkeep */,
 				9F74D0C01C08A23200F53A5D /* flake2@2x.png */,
 				9F74D0C11C08A23200F53A5D /* flake@2x.png */,
 				9F74D0C21C08A23200F53A5D /* SleighBells.mp3 */,
