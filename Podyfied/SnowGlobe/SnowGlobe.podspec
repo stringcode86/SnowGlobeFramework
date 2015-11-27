@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SnowGlobe"
-  s.version          = "2.0.6"
+  s.version          = "2.0.7"
   s.summary          = "Delightful / cheesy Christmas easter egg to. Shake iPhone to snow"
 
 # This description is used to generate tags and improve search results.
@@ -30,9 +30,9 @@ DESC
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Podyfied/SnowGlobe/Pod/Classes/**/*'
+  s.source_files = 'Podyfied/SnowGlobe/Pod/Classes/**/*' , 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'SnowGlobe' => ['Podyfied/SnowGlobe/Pod/Assets/*.*']
+    'SnowGlobe' => ['Podyfied/SnowGlobe/Pod/Assets/*.*', 'Pod/Assets/*.*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
