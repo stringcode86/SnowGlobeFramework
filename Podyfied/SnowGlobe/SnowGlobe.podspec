@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SnowGlobe"
-  s.version          = "2.0.1"
+  s.version          = "2.0.2"
   s.summary          = "Delightful / cheesy Christmas easter egg to. Shake iPhone to snow"
 
 # This description is used to generate tags and improve search results.
