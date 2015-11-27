@@ -112,7 +112,7 @@ public class SnowGlobeView: UIView {
     /**
         Animates emitter's lifetime property to 1, causing emitter to start emitting
     */
-    func startAnimating () {
+    public func startAnimating () {
         playSoundIfNeeded()
         let animDuration = 0.1
         let anim = CABasicAnimation(keyPath: lifetimeKey)
@@ -127,7 +127,7 @@ public class SnowGlobeView: UIView {
     /**
         Animates emitter's lifetime property to 0, causing emitter to stop emitting
     */
-    func stopAnimating () {
+    public func stopAnimating () {
         if emitter.presentationLayer() == nil {
             return
         }
@@ -148,7 +148,7 @@ public class SnowGlobeView: UIView {
     private lazy var queue = NSOperationQueue()
     private lazy var emitterCell: CAEmitterCell = SnowGlobeView.newEmitterCell()
     private var emitter: CAEmitterLayer {  get { return layer as! CAEmitterLayer } }
-    private var isAnimating : Bool {
+    public var isAnimating : Bool {
         get { return self.emitter.lifetime == 1.0 }
     }
 
