@@ -12,6 +12,9 @@
 		519382C6F89CED7FFBCBB4307DF9EAEB /* Pods-SnowGlobe_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A245F19372530B9A89871C118BE2 /* Pods-SnowGlobe_Example-dummy.m */; };
 		59073B0E5F8CBC485C53C21097E84B47 /* Pods-SnowGlobe_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7778D8DF40585002ABAF4657C10AF51 /* Pods-SnowGlobe_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6611D9BE5AB626971FF5C2E994894371 /* Pods-SnowGlobe_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8CAB2CD4B7DC05F197F97EB5C329F7 /* Pods-SnowGlobe_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F74D0C81C08A23200F53A5D /* CMMotionManager+shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74D0C51C08A23200F53A5D /* CMMotionManager+shared.swift */; };
+		9F74D0C91C08A23200F53A5D /* Numbers+Extentios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74D0C61C08A23200F53A5D /* Numbers+Extentios.swift */; };
+		9F74D0CA1C08A23200F53A5D /* SnowGlobeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74D0C71C08A23200F53A5D /* SnowGlobeView.swift */; };
 		E93BEF717D79E962E3FC6606425490E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,13 @@
 		7945E261DEB8DF1AC8080C6532593462 /* Pods_SnowGlobe_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowGlobe_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8816419265C64A7CCC32FF64C1459E9E /* Pods-SnowGlobe_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SnowGlobe_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		902FE7D87265A46E452B6C5B307FACF3 /* Pods-SnowGlobe_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnowGlobe_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		9F74D0BF1C08A23200F53A5D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		9F74D0C01C08A23200F53A5D /* flake2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flake2@2x.png"; sourceTree = "<group>"; };
+		9F74D0C11C08A23200F53A5D /* flake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flake@2x.png"; sourceTree = "<group>"; };
+		9F74D0C21C08A23200F53A5D /* SleighBells.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SleighBells.mp3; sourceTree = "<group>"; };
+		9F74D0C51C08A23200F53A5D /* CMMotionManager+shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMMotionManager+shared.swift"; sourceTree = "<group>"; };
+		9F74D0C61C08A23200F53A5D /* Numbers+Extentios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Numbers+Extentios.swift"; sourceTree = "<group>"; };
+		9F74D0C71C08A23200F53A5D /* SnowGlobeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowGlobeView.swift; sourceTree = "<group>"; };
 		B5523896253EAED12A7DDFADBA087203 /* Pods-SnowGlobe_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnowGlobe_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BF8CAB2CD4B7DC05F197F97EB5C329F7 /* Pods-SnowGlobe_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SnowGlobe_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -133,6 +143,37 @@
 			);
 			sourceTree = "<group>";
 		};
+		9F74D0BE1C08A23200F53A5D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F74D0BF1C08A23200F53A5D /* .gitkeep */,
+				9F74D0C01C08A23200F53A5D /* flake2@2x.png */,
+				9F74D0C11C08A23200F53A5D /* flake@2x.png */,
+				9F74D0C21C08A23200F53A5D /* SleighBells.mp3 */,
+			);
+			name = "Support Files";
+			path = Pod/Assets;
+			sourceTree = "<group>";
+		};
+		9F74D0C31C08A23200F53A5D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9F74D0C51C08A23200F53A5D /* CMMotionManager+shared.swift */,
+				9F74D0C61C08A23200F53A5D /* Numbers+Extentios.swift */,
+				9F74D0C71C08A23200F53A5D /* SnowGlobeView.swift */,
+			);
+			name = Classes;
+			path = Pod/Classes;
+			sourceTree = "<group>";
+		};
+		9F74D0CB1C08A23D00F53A5D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9F74D0C31C08A23200F53A5D /* Classes */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		AFDEB27A362F068CB8C8FB5EED2CE525 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +221,8 @@
 		E7CF110A01E732FF549253762A5FAB83 /* SnowGlobe */ = {
 			isa = PBXGroup;
 			children = (
+				9F74D0BE1C08A23200F53A5D /* Support Files */,
+				9F74D0CB1C08A23D00F53A5D /* Pod */,
 			);
 			name = SnowGlobe;
 			path = ../..;
@@ -318,6 +361,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F74D0C81C08A23200F53A5D /* CMMotionManager+shared.swift in Sources */,
+				9F74D0CA1C08A23200F53A5D /* SnowGlobeView.swift in Sources */,
+				9F74D0C91C08A23200F53A5D /* Numbers+Extentios.swift in Sources */,
 				519382C6F89CED7FFBCBB4307DF9EAEB /* Pods-SnowGlobe_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
