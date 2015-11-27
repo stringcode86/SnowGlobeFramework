@@ -59,7 +59,7 @@
                                 <animations/>
                                 <string key="text">SnowGlobeView was added as subview of ViewController's view with darkSnowFlakeImage. Framework cames with ligth (default) and dark snowFlake images, you can also set your custom image</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="1" height="-1"/>

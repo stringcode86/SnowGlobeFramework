@@ -1,5 +1,5 @@
 PODS:
-  - SnowGlobe (2.0.2)
+  - SnowGlobe (1.9.1)
 
 DEPENDENCIES:
   - SnowGlobe (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SnowGlobe: 560c59ad8cfe72434db3a6d0efa5e77196950a04
+  SnowGlobe: 1f412770eaf4df359525ae3d1384d064298468fc
 
 COCOAPODS: 0.39.0
