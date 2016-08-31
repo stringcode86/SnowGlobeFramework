@@ -11,7 +11,7 @@ import AudioToolbox
 
 private let lifetimeKey = "lifetime"
 
-public class SnowGlobeView: UIView {
+open class SnowGlobeView: UIView {
     
     //MARK: - Initializers
     
@@ -31,7 +31,7 @@ public class SnowGlobeView: UIView {
         When true, Creates CMMotionManager, monitors accelerometer and starts emitting snow flakes upon shaking.
         When set to flase emits snow flakes upon view's appearance on screen.
     */
-    public var shakeToSnow: Bool = false {
+    open var shakeToSnow: Bool = false {
         didSet {
             if oldValue != shakeToSnow {
                 shouldShakeToSnow(shakeToSnow)
@@ -40,7 +40,7 @@ public class SnowGlobeView: UIView {
     }
     
     /// When set to true snow fall is ligther, less dense.
-    public var lighterSnowMode: Bool = false {
+    open var lighterSnowMode: Bool = false {
         didSet {
             if (oldValue != lighterSnowMode) {
                 emitterCell = SnowGlobeView.newEmitterCell(lighterSnowMode, image: snowFlakeImage)
@@ -50,10 +50,10 @@ public class SnowGlobeView: UIView {
     }
     
     /// Snow flake image, recomended size 74 X 74 pixels @2x.
-    public var snowFlakeImage: UIImage? {
+    open var snowFlakeImage: UIImage? {
         get {
-            if let image: AnyObject = emitterCell.contents {
-                return UIImage(CGImage: image as! CGImage)
+            if let image: Any = emitterCell.contents {
+                return UIImage(cgImage: image as! CGImage)
             }
             return nil
         }
@@ -63,10 +63,10 @@ public class SnowGlobeView: UIView {
         }
     }
     
-    public var soundEffectsEnabled: Bool = true
+    open var soundEffectsEnabled: Bool = true
     
     /// default ligth snow flake image
-    public class func lightSnowFlakeImage() -> (UIImage?) {
+    open class func lightSnowFlakeImage() -> (UIImage?) {
         if let image = UIImage(named: "flake") {
             return image;
         }
@@ -74,7 +74,7 @@ public class SnowGlobeView: UIView {
     }
     
     /// default dark snow flake image
-    public class func darkSnowFlakeImage() -> (UIImage?) {
+    open class func darkSnowFlakeImage() -> (UIImage?) {
         if let image = UIImage(named: "flake2") {
             return image;
         }
@@ -83,18 +83,18 @@ public class SnowGlobeView: UIView {
     
     //MARK: -
     
-    public override class func layerClass() -> AnyClass {
+    open override class var layerClass: AnyClass {
         return CAEmitterLayer.self
     }
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
-        emitter.emitterSize = CGSizeMake(bounds.size.width, bounds.size.height)
-        emitter.position = CGPointMake(bounds.size.width, bounds.size.height / 2)
+        emitter.emitterSize = CGSize(width: bounds.size.width, height: bounds.size.height)
+        emitter.position = CGPoint(x: bounds.size.width, y: bounds.size.height / 2)
     }
     
-    public override func willMoveToWindow(newWindow: UIWindow?) {
-        super.willMoveToWindow(newWindow)
+    open override func willMove(toWindow newWindow: UIWindow?) {
+        super.willMove(toWindow: newWindow)
         if newWindow != nil && shakeToSnow == false && isAnimating == false {
             startAnimating()
         } else {
@@ -116,11 +116,11 @@ public class SnowGlobeView: UIView {
         playSoundIfNeeded()
         let animDuration = 0.1
         let anim = CABasicAnimation(keyPath: lifetimeKey)
-        anim.fromValue = emitter.presentationLayer()?.lifetime
+        anim.fromValue = emitter.presentation()?.lifetime
         anim.toValue = 1
         anim.setValue(animDuration, forKeyPath: "duration")
-        emitter.removeAnimationForKey(lifetimeKey)
-        emitter.addAnimation(anim, forKey: lifetimeKey)
+        emitter.removeAnimation(forKey: lifetimeKey)
+        emitter.add(anim, forKey: lifetimeKey)
         emitter.lifetime = 1
     }
     
@@ -128,47 +128,47 @@ public class SnowGlobeView: UIView {
         Animates emitter's lifetime property to 0, causing emitter to stop emitting
     */
     func stopAnimating () {
-        if emitter.presentationLayer() == nil {
+        if emitter.presentation() == nil {
             return
         }
         let animDuration = 4.0
         let anim = CAKeyframeAnimation(keyPath: lifetimeKey)
-        anim.values = [emitter.presentationLayer()!.lifetime, emitter.presentationLayer()!.lifetime, 0.0]
+        anim.values = [emitter.presentation()!.lifetime, emitter.presentation()!.lifetime, 0.0]
         anim.keyTimes = [0.0, 0.5, 1.0]
         anim.setValue(animDuration, forKeyPath: "duration")
-        emitter.addAnimation(anim, forKey: lifetimeKey)
+        emitter.add(anim, forKey: lifetimeKey)
         emitter.lifetime = 0.0
-        dispatch_after( dispatch_time( DISPATCH_TIME_NOW, Int64(animDuration * Double(NSEC_PER_SEC))),dispatch_get_main_queue(), {[weak self] ()->() in
+        DispatchQueue.main.asyncAfter( deadline: DispatchTime.now() + Double(Int64(animDuration * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {[weak self] ()->() in
             self?.shouldPlaySound = true
         })
 
     }
     
     /// Queue that recieves accelerometer updates from CMMotionManager
-    private lazy var queue = NSOperationQueue()
-    private lazy var emitterCell: CAEmitterCell = SnowGlobeView.newEmitterCell()
-    private var emitter: CAEmitterLayer {  get { return layer as! CAEmitterLayer } }
-    private var isAnimating : Bool {
+    fileprivate lazy var queue = OperationQueue()
+    fileprivate lazy var emitterCell: CAEmitterCell = SnowGlobeView.newEmitterCell()
+    fileprivate var emitter: CAEmitterLayer {  get { return layer as! CAEmitterLayer } }
+    fileprivate var isAnimating : Bool {
         get { return self.emitter.lifetime == 1.0 }
     }
 
-    private func initialSetup() {
-        backgroundColor = UIColor.clearColor()
-        autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
-        userInteractionEnabled = false
+    fileprivate func initialSetup() {
+        backgroundColor = UIColor.clear
+        autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
+        isUserInteractionEnabled = false
         emitter.emitterCells = [emitterCell]
         emitter.emitterShape = kCAEmitterLayerLine
         emitter.renderMode = kCAEmitterLayerOldestLast
         emitter.lifetime = 0
     }
     
-    private func shouldShakeToSnow(shakeToSnow: Bool) {
+    fileprivate func shouldShakeToSnow(_ shakeToSnow: Bool) {
         let motionManager = CMMotionManager.sharedManager
         motionManager.accelerometerUpdateInterval = 0.15
-        if motionManager.accelerometerActive || !shakeToSnow {
+        if motionManager.isAccelerometerActive || !shakeToSnow {
             motionManager.stopAccelerometerUpdates()
         }
-        motionManager.startAccelerometerUpdatesToQueue(queue) { [weak self] accelerometerData, error in
+        motionManager.startAccelerometerUpdates(to: queue) { [weak self] accelerometerData, error in
             let data = accelerometerData!.acceleration
             var magnitude = sqrt( sq(data.x) + sq(data.y) + sq(data.z) )
             magnitude = (magnitude < 3.0) ? 0.0 : magnitude
@@ -176,12 +176,12 @@ public class SnowGlobeView: UIView {
                 return
             }
             if let welf = self {
-                dispatch_async(dispatch_get_main_queue()) { welf.animate(toLifetime: magnitude) }
+                DispatchQueue.main.async { welf.animate(toLifetime: magnitude) }
             }
         }
     }
     
-    private func animate(toLifetime rate:Double) {
+    fileprivate func animate(toLifetime rate:Double) {
         if rate <= 0.0 && self.emitter.lifetime != 0.0 {
             stopAnimating()
         } else if rate > 0.0 && isAnimating == false {
@@ -189,14 +189,14 @@ public class SnowGlobeView: UIView {
         }
     }
     
-    private class func newEmitterCell(slowSnow:Bool = false, image: UIImage? = nil) -> CAEmitterCell {
+    fileprivate class func newEmitterCell(_ slowSnow:Bool = false, image: UIImage? = nil) -> CAEmitterCell {
         let cell = CAEmitterCell()
         var currentImage = image
         if currentImage == nil {
             currentImage = SnowGlobeView.lightSnowFlakeImage()
         }
         
-        cell.contents = currentImage?.CGImage
+        cell.contents = currentImage?.cgImage
         cell.birthRate = 60
         cell.lifetime = 25
         cell.scale = 0.2
@@ -215,8 +215,8 @@ public class SnowGlobeView: UIView {
     
     class func frameworkImage(named name: String?) -> (UIImage? ) {
         var image: UIImage? = nil
-        let frameworkBundle = NSBundle(identifier: "uk.co.stringCode.SnowGlobe")
-        if let imagePath = frameworkBundle?.pathForResource(name, ofType: "png") {
+        let frameworkBundle = Bundle(identifier: "uk.co.stringCode.SnowGlobe")
+        if let imagePath = frameworkBundle?.path(forResource: name, ofType: "png") {
             image = UIImage(contentsOfFile: imagePath)
         }
         return image
@@ -224,21 +224,21 @@ public class SnowGlobeView: UIView {
     
     //MARK: Sound effects
     
-    private var shouldPlaySound:Bool = true
+    fileprivate var shouldPlaySound:Bool = true
     
-    private func playSoundIfNeeded() {
+    fileprivate func playSoundIfNeeded() {
         if shouldPlaySound && soundEffectsEnabled {
             shouldPlaySound = false
             AudioServicesPlaySystemSound(sleighBellsSoundId);
         }
     }
     
-    private lazy var sleighBellsSoundId: SystemSoundID = {
+    fileprivate lazy var sleighBellsSoundId: SystemSoundID = {
         var soundId: SystemSoundID = 0
-        if let url = NSBundle.mainBundle().URLForResource("SleighBells", withExtension: "mp3") {
-            AudioServicesCreateSystemSoundID(url, &soundId)
-        } else if let url = NSBundle(identifier: "uk.co.stringCode.SnowGlobe")?.URLForResource("SleighBells", withExtension: "mp3") {
-            AudioServicesCreateSystemSoundID(url, &soundId)
+        if let url = Bundle.main.url(forResource: "SleighBells", withExtension: "mp3") {
+            AudioServicesCreateSystemSoundID(url as CFURL, &soundId)
+        } else if let url = Bundle(identifier: "uk.co.stringCode.SnowGlobe")?.url(forResource: "SleighBells", withExtension: "mp3") {
+            AudioServicesCreateSystemSoundID(url as CFURL, &soundId)
         }
         return soundId
     }()
