@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var snowGlobeView: SnowGlobeView?
     
-    func applicationDidBecomeActive(application: UIApplication) {
+    func applicationDidBecomeActive(_ application: UIApplication) {
         if snowGlobeView == nil {
             let bounds = application.keyWindow?.bounds
             snowGlobeView = SnowGlobeView(frame: bounds!)

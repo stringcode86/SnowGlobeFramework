@@ -15,7 +15,7 @@ class TwoViewController: UIViewController {
         tabBarController?.navigationItem.title = title
         let snowGlobeView = SnowGlobeView(frame:view.bounds)
         snowGlobeView.snowFlakeImage = SnowGlobeView.darkSnowFlakeImage()
-        view.insertSubview(snowGlobeView, atIndex: 0)
+        view.insertSubview(snowGlobeView, at: 0)
     }
 
 }
