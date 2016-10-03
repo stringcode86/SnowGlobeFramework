@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol Summable { func +(lhs: Self, rhs: Self) -> Self }
-protocol Multiplicable { func *(lhs: Self, rhs: Self) -> Self }
+protocol Summable { static func +(lhs: Self, rhs: Self) -> Self }
+protocol Multiplicable { static func *(lhs: Self, rhs: Self) -> Self }
 
 extension Int: Summable, Multiplicable {}
 extension Double: Summable, Multiplicable {}
 extension Float: Summable, Multiplicable {}
 
-func sq<T: Multiplicable>(x: T) -> T {
+func sq<T: Multiplicable>(_ x: T) -> T {
     return x * x
 }
