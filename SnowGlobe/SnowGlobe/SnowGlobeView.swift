@@ -243,6 +243,7 @@ open class SnowGlobeView: UIView {
             if let url = Bundle(path: cocoaPodBundlePath)?.url(forResource: "SleighBells", withExtension: "mp3") {
                 AudioServicesCreateSystemSoundID(url as CFURL, &soundId)
             }
+
         }
         return soundId
     }()
