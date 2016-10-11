@@ -27,16 +27,12 @@ DESC
   s.source           = { :git => "https://github.com/stringcode86/SnowGlobeFramework.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/stringcode'
 
-  s.platform     = :ios, '9.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Podyfied/SnowGlobe/Pod/Classes/**/*' , 'Pod/Classes/**/*'
   s.resource_bundles = {
     'SnowGlobe' => ['Podyfied/SnowGlobe/Pod/Assets/*.*', 'Pod/Assets/*.*']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
 
