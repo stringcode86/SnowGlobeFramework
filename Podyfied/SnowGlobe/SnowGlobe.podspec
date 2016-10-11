@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SnowGlobe"
-  s.version          = "2.1.1"
+  s.version          = "2.1.2"
   s.summary          = "Delightful / cheesy Christmas easter egg to. Shake iPhone to snow"
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ DESC
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
 
