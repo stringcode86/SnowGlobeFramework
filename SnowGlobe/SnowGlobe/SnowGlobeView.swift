@@ -65,6 +65,8 @@ open class SnowGlobeView: UIView {
     
     open var soundEffectsEnabled: Bool = true
     
+    open var sensitivity: SnowGlobeSensitivity = .medium
+    
     /// default ligth snow flake image
     open class func lightSnowFlakeImage() -> (UIImage?) {
         if let image = UIImage(named: "flake") {
@@ -170,9 +172,9 @@ open class SnowGlobeView: UIView {
         }
         motionManager.startAccelerometerUpdates(to: queue) { [weak self] accelerometerData, error in
             let data = accelerometerData!.acceleration
-            var magnitude = sqrt( sq(data.x) + sq(data.y) + sq(data.z) )
-            magnitude = (magnitude < 3.0) ? 0.0 : magnitude
-            if (magnitude == 0.0 && self?.isAnimating == false) {
+            let sensitivity = self?.sensitivity ?? .medium
+            let magnitude = sqrt( sq(data.x) + sq(data.y) + sq(data.z) )
+            if (magnitude >= sensitivity && self?.isAnimating == false) {
                 return
             }
             if let welf = self {
