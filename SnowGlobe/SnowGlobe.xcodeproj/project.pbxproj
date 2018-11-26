@@ -16,6 +16,7 @@
 		9FDC70E11A2FBFDC0033F371 /* Numbers+Extentios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC70DB1A2FBFDC0033F371 /* Numbers+Extentios.swift */; };
 		9FDC70E21A2FBFDC0033F371 /* SleighBells.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC70DC1A2FBFDC0033F371 /* SleighBells.mp3 */; };
 		9FDC70E31A2FBFDC0033F371 /* SnowGlobeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC70DD1A2FBFDC0033F371 /* SnowGlobeView.swift */; };
+		A774FBD61FB32DD000D08796 /* SnowGlobeSensitivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A774FBD51FB32DD000D08796 /* SnowGlobeSensitivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		9FDC70DB1A2FBFDC0033F371 /* Numbers+Extentios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Numbers+Extentios.swift"; sourceTree = "<group>"; };
 		9FDC70DC1A2FBFDC0033F371 /* SleighBells.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SleighBells.mp3; sourceTree = "<group>"; };
 		9FDC70DD1A2FBFDC0033F371 /* SnowGlobeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowGlobeView.swift; sourceTree = "<group>"; };
+		A774FBD51FB32DD000D08796 /* SnowGlobeSensitivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowGlobeSensitivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				9FDC70C11A2FBFAB0033F371 /* SnowGlobe.h */,
 				9FDC70DD1A2FBFDC0033F371 /* SnowGlobeView.swift */,
+				A774FBD51FB32DD000D08796 /* SnowGlobeSensitivity.swift */,
 				9FDC70D81A2FBFDC0033F371 /* CMMotionManager+shared.swift */,
 				9FDC70DB1A2FBFDC0033F371 /* Numbers+Extentios.swift */,
 				9FDC70E41A2FBFE70033F371 /* Resources */,
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A774FBD61FB32DD000D08796 /* SnowGlobeSensitivity.swift in Sources */,
 				9FDC70E11A2FBFDC0033F371 /* Numbers+Extentios.swift in Sources */,
 				9FDC70DE1A2FBFDC0033F371 /* CMMotionManager+shared.swift in Sources */,
 				9FDC70E31A2FBFDC0033F371 /* SnowGlobeView.swift in Sources */,
@@ -311,6 +315,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -353,6 +358,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -376,7 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringCode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -395,7 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.stringCode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
